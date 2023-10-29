@@ -1,0 +1,21 @@
+.lists.blog{
+    list-style-type: lower-roman;
+}
+
+.lists.blog > h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: blue;
+}
+
+.lists.blog>.list.main {
+    width: 120px;
+    height: 120px;
+    background: gold;
+}
+
+.lists.blog>.list {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
