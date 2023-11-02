@@ -1,4 +1,86 @@
-#img {
-    width: 170px;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+body{
+    background: #e9e8e6;
+    font-family: 'Lato', sans-serif;
+}
+
+#header{
+    padding: 10px;
+    background: #e9e8e6;
+    text-align: center;
+    
+}
+.img {
+    width: 130px;
+    border-radius: 50%;
+    top: -75px;
+    left: 50%;
+    display: inline;
+    border: 4px solid #655D72;
+
   }
+.left-section {
+    background: #edecec;
+    padding: 5px 20px;
+    flex: 1;
+}
+
+.right-section {
+    background: #edecec;
+    padding: 5px 20px;
+    flex: 1;
+}
+
+.name {
+    font-size: 50px;
+    color: #655D72;
+    margin-top: 20px;
+    font-weight: 100;
+    text-align: center;
+    display: inline;
+}
+#ocupation {
+    text-align: center;
+    
+}
+.description { 
+    color: #655D72;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #655D72;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.about_p {
+    font-size: 12px;
+    color: #898196;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+
+.languages_p {
+    color: #898196;
+}
+
+.education {
+    color: #898196;
+}
+.experience {
+    color: #898196;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
