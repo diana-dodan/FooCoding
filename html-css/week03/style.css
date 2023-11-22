@@ -1,5 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
 html{
-    margin: 0;
+  margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -7,9 +9,6 @@ html{
 	vertical-align: baseline;
 }
 
-body{
-    
-}
 
 h1{
     font-family: Google Sans,arial,sans-serif;
@@ -21,7 +20,7 @@ h1{
 
 } 
 
-h2 {
+h2{
     
     font-family: Google Sans,arial,sans-serif;
     font-size: 1rem;
@@ -32,6 +31,12 @@ h2 {
     max-width: 75%;
 
 }
+
+h3 {
+  font-family: google-sans,arial,sans-serif;
+
+}
+
 
 section {
     flex-basis: 100%;
@@ -63,32 +68,68 @@ p {
   list-style: none;
   padding: 10px;
   gap: 20px;
+  cursor: pointer;
 
 }
 
 .grid-item {
   flex-basis: calc(100% - 10px);
-  border-style: outset;
-  border-color: lightgray;
-
+ 
 }
 
-.grid-item:hover h3 {
-  color: red;
+.grid-item:hover {
+  transition: box-shadow .3s;
+  border-radius:5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+
 
 .grid-item:nth-child(1) {
   flex: 100%;
   border-style: none;
+  transition: none;
+  border-radius:none;
+  border: none;
+  box-shadow: none; 
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.grid-item:nth-child(1):hover {
+  transform: scale(1.1);
+  overflow: hidden;
 }
 
 .grid-item:nth-child(2){
-    border-style: none;
+  border-style: none;
+  transition: none;
+  border-radius:none;
+  border: none;
+  box-shadow: none; 
 }
 
 .grid-item img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+.article-content__description{
+  display: none;
+}
+
+.article-content__title:hover{
+  text-decoration: underline;
+}
+
+.card__insights {
+  align-items: center;
+  color: #757575;
+  display: flex;
+  font-size: .75rem;
+  letter-spacing: .01875rem;
+  line-height: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -111,6 +152,19 @@ p {
   }
   .grid-item {
     flex-basis: calc(25% - 20px);
+  }
+  .article-content__description{
+    display:contents;
+    font-size: .75rem;
+    font-weight: 200;
+    letter-spacing: .05rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-family: Roboto, sans-serif;
+
   }
 }
 
