@@ -1,0 +1,11 @@
+.book-list {
+  list-style: circle;
+}
+
+.title {
+  color: #a13131;
+}
+
+.book-image {
+  height: 150px;
+}
